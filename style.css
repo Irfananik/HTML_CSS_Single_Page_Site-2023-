@@ -13,7 +13,7 @@ body{
 }
 
 /* header style */
-header{
+nav{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -36,6 +36,28 @@ nav ul li a{
     font-size:1.2em;
     font-weight: bold;
 }
+.banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.banner-paragraph{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-right: 30px;
+    font-size: 1.2em;
+    text-align: left;
+}
+.banner-photo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+}
+.banner-photo img{
+    width: 100%;
+}
 main{
     display: flex;
     justify-content: center;
@@ -43,7 +65,7 @@ main{
 
 /* players informations */
 .container{
-    margin-top: 36px;
+    margin-top: 150px;
     width: 980px;
     background-color: rgb(212, 239, 250);
     display: flex;
