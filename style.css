@@ -57,13 +57,22 @@ nav ul li a{
 }
 .banner-photo img{
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    transition: transform 1.5s ease;
 }
-main{
+.banner-photo img:hover{
+    transform: scale(1.2);
+}
+/* main{
+    display: flex;
+    justify-content: center;
+} */
+
+/* players informations */
+.players-parent{
     display: flex;
     justify-content: center;
 }
-
-/* players informations */
 .container{
     margin-top: 150px;
     width: 980px;
@@ -85,6 +94,10 @@ main{
 .player img{
     border-radius: 50%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: transform 1.5s ease;
+}
+.player img:hover{
+    transform: rotate(360deg);
 }
 .player button{
     background-color:rgb(17, 167, 226);
@@ -92,8 +105,87 @@ main{
     border-radius: 20px;
     padding: 8px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.5s ease;
+}
+.player button:hover{
+    background-color: white;
 }
 .player a{
     text-decoration: none;
     font-size: 15px;
 }
+/* players part end */
+
+.blog-parent{
+    display: flex;
+    justify-content:center;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-left: 5%;
+}
+.blog{
+    display: flex;
+    justify-content:space-around;
+    width: 90%;
+}
+.blog img{
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10%;
+    transition: transform 1s ease;
+}
+.blog img:hover{
+    transform: scale(1.2);
+}
+.blog p{
+    margin-left: 16px;
+}
+.blog-hyperlink a{
+    text-decoration: none;
+}
+/* blog part done */
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+.container-footer{
+    
+}
+.social-icons{
+    margin-left: 50px;
+    transition: 1.5s ease;
+}
+.social-icons a{
+    color: #555;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 50%;
+}
+.social-icons a:hover{
+    color: rgb(17, 167, 226);
+}
+/* footer done */
+
+/* animation with paragraph */
+.animated-paragraph {
+    animation: text-focus-in 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  
+  @keyframes text-focus-in {
+    0% {
+      letter-spacing: 1em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
