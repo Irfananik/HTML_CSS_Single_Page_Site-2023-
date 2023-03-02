@@ -5,6 +5,7 @@ body{
     max-width: 1900px;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(223, 239, 254) ;
 }
@@ -194,7 +195,10 @@ footer{
 
 
   /* for mobile divice */
-  @media screen and (max-width:576px) {
+  @media only screen and (max-width:576px) {
+    body{
+        overflow-x: auto;
+    }
     nav{
         display:block;
         position: relative;
@@ -220,4 +224,22 @@ footer{
         
     }
     /* banner part done */
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    /* players part done */
+
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-left: 5%;
+    }
+    .blog{
+        display: block;
+        width: 90%;
+    }
   }
